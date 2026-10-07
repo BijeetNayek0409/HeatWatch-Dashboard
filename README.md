@@ -3,6 +3,8 @@
 ## 1. Project Title
 **HEATWATCH**: Historical Weather Trend & Extreme Temperature Analysis
 
+🚀 **Live Dashboard:** [https://oose-labca-dashboard.streamlit.app/](https://oose-labca-dashboard.streamlit.app/)
+
 ## 2. Aim
 To develop an interactive analytical dashboard that explores historical meteorological trends, identifies seasonal patterns, and detects unusual temperature events using statistical anomaly detection.
 
@@ -72,3 +74,28 @@ To start the interactive dashboard, run:
 streamlit run app.py
 ```
 
+## 19. Viva Questions
+
+**Q: What is your project?**
+A: "Our project is a Historical Weather Trend and Extreme Temperature Analysis module for HeatWatch. It analyzes historical meteorological observations, identifies temperature trends and seasonal patterns, and detects unusually high or low temperature observations."
+
+**Q: Why did you choose this module?**
+A: "The HeatWatch use case includes historical meteorological analysis and region-wise and seasonal analysis. We implemented this functionality as an interactive dashboard."
+
+**Q: What dataset did you use?**
+A: "We used a daily weather dataset containing historical observations for multiple Indian cities."
+
+**Q: What is anomaly detection here?**
+A: "We compare a temperature observation with its historical pattern for that city and period. If it is significantly different, we flag it as unusual or extreme."
+
+**Q: Which algorithm did you use?**
+A: "For extreme-event detection we use a statistical Z-score method because it is simple, interpretable and suitable for identifying observations that deviate significantly from the historical pattern."
+
+**Q: Is this official IMD heatwave classification?**
+A: "No. Our anomaly status is an analytical indicator based on historical statistics. It is not an official IMD heatwave warning."
+
+**Q: Where does live data come from?**
+A: "For the prototype, live observations are obtained from a weather API. In the complete HeatWatch architecture, this observation layer can be supplied by the AWS infrastructure described in the use case."
+
+**Q: Are you doing forecasting?**
+A: "No. Forecasting is outside our selected module. Our module focuses on historical analysis and unusual/extreme temperature observations."
